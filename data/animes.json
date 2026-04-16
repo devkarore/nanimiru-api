@@ -1,0 +1,167 @@
+[
+    {
+        "title": "Yuru Camp",
+        "synopsis": "A relaxing camping anime about friendship, nature, and warm moments.",
+        "year": 2018,
+        "ageRating": 7,
+        "imageUrl": "https://placehold.co/600x800",
+        "slug": "yuru-camp",
+        "genres": ["Slice of Life", "Comedy"],
+        "moods": ["cozy", "relaxing", "wholesome"],
+        "platforms": ["Crunchyroll"]
+    },
+    {
+        "title": "Frieren: Beyond Journey's End",
+        "synopsis": "An elven mage reflects on time, memory and friendship after the hero party's victory.",
+        "year": 2023,
+        "ageRating": 13,
+        "imageUrl": "https://placehold.co/600x800",
+        "slug": "frieren",
+        "genres": ["Fantasy"],
+        "moods": ["cozy", "emotional"],
+        "platforms": ["Crunchyroll", "Prime Video"]
+    },
+    {
+        "title": "Spy x Family",
+        "synopsis": "A spy builds a fake family for a mission, but ends up forming real bonds.",
+        "year": 2022,
+        "ageRating": 10,
+        "imageUrl": "https://placehold.co/600x800",
+        "slug": "spy-x-family",
+        "genres": ["Action", "Comedy"],
+        "moods": ["feel-good", "wholesome"],
+        "platforms": ["Netflix", "Crunchyroll"]
+    },
+    {
+        "title": "My Neighbor Totoro",
+        "synopsis": "Two sisters encounter magical creatures in the countryside.",
+        "year": 1988,
+        "ageRating": 5,
+        "imageUrl": "https://placehold.co/600x800",
+        "slug": "totoro",
+        "genres": ["Fantasy"],
+        "moods": ["cozy", "wholesome"],
+        "platforms": ["Netflix"]
+    },
+    {
+        "title": "Demon Slayer",
+        "synopsis": "A young boy becomes a demon slayer to save his sister.",
+        "year": 2019,
+        "ageRating": 14,
+        "imageUrl": "https://placehold.co/600x800",
+        "slug": "demon-slayer",
+        "genres": ["Action", "Fantasy"],
+        "moods": ["epic", "tense"],
+        "platforms": ["Crunchyroll"]
+    },
+    {
+        "title": "Your Name",
+        "synopsis": "Two teenagers mysteriously swap bodies and form a connection.",
+        "year": 2016,
+        "ageRating": 10,
+        "imageUrl": "https://placehold.co/600x800",
+        "slug": "your-name",
+        "genres": ["Romance", "Fantasy"],
+        "moods": ["feel-good", "emotional"],
+        "platforms": ["Disney+"]
+    },
+    {
+        "title": "Attack on Titan",
+        "synopsis": "Humanity fights for survival against giant humanoid creatures.",
+        "year": 2013,
+        "ageRating": 16,
+        "imageUrl": "https://placehold.co/600x800",
+        "slug": "attack-on-titan",
+        "genres": ["Action"],
+        "moods": ["dark", "tense", "epic"],
+        "platforms": ["Crunchyroll"]
+    },
+    {
+        "title": "Kiki's Delivery Service",
+        "synopsis": "A young witch starts her own delivery service in a seaside town.",
+        "year": 1989,
+        "ageRating": 6,
+        "imageUrl": "https://placehold.co/600x800",
+        "slug": "kiki",
+        "genres": ["Fantasy"],
+        "moods": ["cozy", "wholesome"],
+        "platforms": ["Netflix"]
+    },
+    {
+        "title": "Haikyuu!!",
+        "synopsis": "A determined boy joins a volleyball team and aims for the top.",
+        "year": 2014,
+        "ageRating": 10,
+        "imageUrl": "https://placehold.co/600x800",
+        "slug": "haikyuu",
+        "genres": ["School"],
+        "moods": ["feel-good", "epic"],
+        "platforms": ["Crunchyroll"]
+    },
+    {
+        "title": "Toradora!",
+        "synopsis": "Two unlikely students help each other with their crushes.",
+        "year": 2008,
+        "ageRating": 12,
+        "imageUrl": "https://placehold.co/600x800",
+        "slug": "toradora",
+        "genres": ["Romance", "Comedy"],
+        "moods": ["feel-good", "emotional"],
+        "platforms": ["Netflix"]
+    },
+    {
+        "title": "Made in Abyss",
+        "synopsis": "A girl descends into a mysterious abyss full of danger.",
+        "year": 2017,
+        "ageRating": 16,
+        "imageUrl": "https://placehold.co/600x800",
+        "slug": "made-in-abyss",
+        "genres": ["Fantasy"],
+        "moods": ["dark", "tense"],
+        "platforms": ["Crunchyroll"]
+    },
+    {
+        "title": "Barakamon",
+        "synopsis": "A calligrapher moves to the countryside and finds inspiration.",
+        "year": 2014,
+        "ageRating": 10,
+        "imageUrl": "https://placehold.co/600x800",
+        "slug": "barakamon",
+        "genres": ["Slice of Life", "Comedy"],
+        "moods": ["cozy", "relaxing", "wholesome"],
+        "platforms": ["Crunchyroll"]
+    },
+    {
+        "title": "One Punch Man",
+        "synopsis": "A hero defeats enemies with a single punch but feels bored.",
+        "year": 2015,
+        "ageRating": 13,
+        "imageUrl": "https://placehold.co/600x800",
+        "slug": "one-punch-man",
+        "genres": ["Action", "Comedy"],
+        "moods": ["feel-good", "epic"],
+        "platforms": ["Netflix"]
+    },
+    {
+        "title": "Violet Evergarden",
+        "synopsis": "A former soldier learns about emotions and love.",
+        "year": 2018,
+        "ageRating": 13,
+        "imageUrl": "https://placehold.co/600x800",
+        "slug": "violet-evergarden",
+        "genres": ["Drama"],
+        "moods": ["emotional"],
+        "platforms": ["Netflix"]
+    },
+    {
+        "title": "Jujutsu Kaisen",
+        "synopsis": "A student fights cursed spirits in a dark supernatural world.",
+        "year": 2020,
+        "ageRating": 16,
+        "imageUrl": "https://placehold.co/600x800",
+        "slug": "jujutsu-kaisen",
+        "genres": ["Action", "Fantasy"],
+        "moods": ["dark", "tense", "epic"],
+        "platforms": ["Crunchyroll"]
+    }
+]
