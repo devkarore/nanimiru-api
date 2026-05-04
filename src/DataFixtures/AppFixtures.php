@@ -9,11 +9,23 @@ use App\Entity\Anime;
 use App\Entity\Genre;
 use App\Entity\Mood;
 use App\Entity\Platform;
+use App\Entity\User;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
 class AppFixtures extends Fixture
 {
+    public function __construct( private UserPasswordHasherInterface $hasher ) {}
+
     public function load(ObjectManager $manager): void
     {
+        // profil User
+        $user = new User();
+        $user->setEmail('admin@nanimiru.fr');
+        $user->setPassword($this->hasher->hashPassword($user, 'password123'));
+        $user->setRoles(['ROLE_ADMIN']);
+        $manager->persist($user);
+
+
         // ****************************************
         // genres, moods, platforms
 
