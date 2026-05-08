@@ -25,7 +25,6 @@ use ApiPlatform\Doctrine\Orm\Filter\SearchFilter;
     normalizationContext: ['groups' => ['anime:read']],
     denormalizationContext: ['groups' => ['anime:write']]
 )]
-
 #[ApiFilter(SearchFilter::class, properties: [
     'title' => 'partial',
     'year' => 'exact',
@@ -33,7 +32,6 @@ use ApiPlatform\Doctrine\Orm\Filter\SearchFilter;
     'moods' => 'exact',
     'platforms' => 'exact',
 ])]
-
 
 #[ORM\Entity(repositoryClass: AnimeRepository::class)]
 class Anime
