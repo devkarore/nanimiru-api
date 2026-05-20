@@ -12,7 +12,10 @@ use ApiPlatform\Metadata\Get;
 use ApiPlatform\Metadata\Post;
 use ApiPlatform\Metadata\GetCollection;
 use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Doctrine\Orm\Filter\SearchFilter;
+use ApiPlatform\Metadata\ApiFilter;
 
+#[ApiFilter(SearchFilter::class, properties: ['slug' => 'exact'])]
 #[ApiResource(
     operations: [
         new GetCollection(),
@@ -43,6 +46,10 @@ class Genre
      */
     #[ORM\ManyToMany(targetEntity: Anime::class, mappedBy: 'genres')]
     private Collection $animes;
+
+    #[ORM\Column(length: 255)]
+    #[Groups(['genre:read'])]
+    private ?string $slug = null;
 
     public function __construct()
     {
@@ -89,6 +96,18 @@ class Genre
         if ($this->animes->removeElement($anime)) {
             $anime->removeGenre($this);
         }
+
+        return $this;
+    }
+
+    public function getSlug(): ?string
+    {
+        return $this->slug;
+    }
+
+    public function setSlug(string $slug): static
+    {
+        $this->slug = $slug;
 
         return $this;
     }

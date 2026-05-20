@@ -12,6 +12,10 @@ use ApiPlatform\Metadata\Get;
 use ApiPlatform\Metadata\Post;
 use ApiPlatform\Metadata\GetCollection;
 use ApiPlatform\Metadata\ApiResource;
+use ApiPlatform\Doctrine\Orm\Filter\SearchFilter;
+use ApiPlatform\Metadata\ApiFilter;
+
+#[ApiFilter(SearchFilter::class, properties: ['slug' => 'exact'])]
 #[ApiResource(
     operations: [
         new GetCollection(),

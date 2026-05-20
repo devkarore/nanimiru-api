@@ -11,6 +11,7 @@ use App\Entity\Mood;
 use App\Entity\Platform;
 use App\Entity\User;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
+use Symfony\Component\String\Slugger\AsciiSlugger;
 
 class AppFixtures extends Fixture
 {
@@ -29,11 +30,14 @@ class AppFixtures extends Fixture
         // ****************************************
         // genres, moods, platforms
 
+        $slugger = new AsciiSlugger();
         $genres = ['Fantasy', 'Action', 'Romance', 'Slice of Life', 'Comedy', 'Adventure', 'Drama', 'School'];
         $genreEntities = [];
         foreach ($genres as $name) {
             $genre = new Genre();
             $genre->setName($name);
+            $slug = $slugger->slug($name)->lower()->toString();
+            $genre->setSlug($slug);
             $manager->persist($genre);
             $genreEntities[$name] = $genre;
         } 
