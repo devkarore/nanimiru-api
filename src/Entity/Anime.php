@@ -91,6 +91,14 @@ class Anime
     #[Groups(['anime:read', 'anime:write'])]
     private Collection $platforms;
 
+    #[ORM\Column(length: 50, nullable: true)]
+    #[Groups(['anime:read', 'anime:write'])]
+    private ?string $type = null;
+
+    #[ORM\Column(nullable: true)]
+    #[Groups(['anime:read', 'anime:write'])]
+    private ?int $nbEpisodes = null;
+
     public function __construct()
     {
         $this->genres = new ArrayCollection();
@@ -252,6 +260,30 @@ class Anime
         $this->platforms->removeElement($platform);{
         $platform->removeAnime($this);
     }
+        return $this;
+    }
+
+    public function getType(): ?string
+    {
+        return $this->type;
+    }
+
+    public function setType(?string $type): static
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    public function getNbEpisodes(): ?int
+    {
+        return $this->nbEpisodes;
+    }
+
+    public function setNbEpisodes(?int $nbEpisodes): static
+    {
+        $this->nbEpisodes = $nbEpisodes;
+
         return $this;
     }
 

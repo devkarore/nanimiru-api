@@ -139,7 +139,9 @@ class AppFixtures extends Fixture
             ->setYear($animeData['year'])
             ->setAgeRating($animeData['ageRating'])
             ->setImageUrl($animeData['imageUrl'])
-            ->setThumbnailUrl($baseUrl . '/images/animes/' . $animeData['slug'] . '.jpg');
+            ->setThumbnailUrl($baseUrl . '/images/animes/' . $animeData['slug'] . '.jpg')
+            ->setType($animeData['type'])
+            ->setNbEpisodes($animeData['nbEpisodes']);
 
         // ****************************************
         // Boucle pour genre, mood et platform
