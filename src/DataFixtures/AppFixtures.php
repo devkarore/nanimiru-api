@@ -52,11 +52,11 @@ class AppFixtures extends Fixture
                 'description' => 'Anime joyeux et positif',
             ],
             'wholesome' => [
-                'label' => 'Réconfortant',
+                'label' => 'Bienveillant',
                 'description' => 'Rempli de tendresse et de bienveillance',
             ],
             'emotional' => [
-                'label' => 'Émotionnel',
+                'label' => 'Émouvant',
                 'description' => 'Histoire touchante et émotive',
             ],
             'dark' => [
